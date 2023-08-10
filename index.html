@@ -47,10 +47,10 @@
             function runApp() {
               liff.getProfile().then(profile => {
                 document.getElementById("pictureUrl").src = profile.pictureUrl;  // %u0E41%u0E2A%u0E14%u0E07%u0E23%u0E39%u0E1B Profile %u0E17%u0E35%u0E48%u0E14%u0E36%u0E07%u0E21%u0E32
-                //document.getElementById("userId").innerHTML = '<b>UserId:</b> ' + profile.userId; 
+                document.getElementById("userId").innerHTML = '<b>UserId:</b> ' + profile.userId; 
                 document.getElementById("displayName").innerHTML = '<b>สวัสดี:</b> ' + profile.displayName; // %u0E41%u0E2A%u0E14%u0E07%u0E0A%u0E37%u0E48%u0E2D Line %u0E02%u0E2D%u0E07%u0E1C%u0E39%u0E49%u0E43%u0E0A%u0E49
-                //document.getElementById("statusMessage").innerHTML = '<b>StatusMessage:</b> ' + profile.statusMessage;  // %u0E41%u0E2A%u0E14%u0E07%u0E2A%u0E16%u0E32%u0E19%u0E30%u0E02%u0E2D%u0E07%u0E1C%u0E39%u0E49%u0E43%u0E0A%u0E49 Line
-                //document.getElementById("getDecodedIDToken").innerHTML = '<b>Email:</b> ' + liff.getDecodedIDToken().email;
+                document.getElementById("statusMessage").innerHTML = '<b>StatusMessage:</b> ' + profile.statusMessage;  // %u0E41%u0E2A%u0E14%u0E07%u0E2A%u0E16%u0E32%u0E19%u0E30%u0E02%u0E2D%u0E07%u0E1C%u0E39%u0E49%u0E43%u0E0A%u0E49 Line
+                document.getElementById("getDecodedIDToken").innerHTML = '<b>Email:</b> ' + liff.getDecodedIDToken().email;
               }).catch(err => console.error(err));
             }
             liff.init({ liffId: "2000366968-QrJ2rAl8" }, () => { // เปลี่ยน LIFF ID 
