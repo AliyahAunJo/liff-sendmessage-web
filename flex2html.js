@@ -1,3 +1,4 @@
+<script>
 function flex2html(element, json) {
    let carousel = carousel_struc()
    let result = ''
@@ -810,3 +811,4 @@ function upper2digit(str) {
 function upperalldigit(str) {
    return str.charAt(0).toUpperCase() + str.slice(1)
 }
+</script>
