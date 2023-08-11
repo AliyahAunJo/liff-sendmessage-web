@@ -53,11 +53,11 @@
                 //document.getElementById("getDecodedIDToken").innerHTML = '<b>Email:</b> ' + liff.getDecodedIDToken().email;
               }).catch(err => console.error(err));
             }
-            liff.init({ liffId: "2000366968-QrJ2rAl8" } async() => {
+            liff.init({ liffId: "2000366968-QrJ2rAl8" } (async() => {
               if (liff.isLoggedIn()) {
                 runApp()
               } else {
-                liff.login();
+                await liff.login();
               }
             }), err => console.error(err.code, error.message));
         
