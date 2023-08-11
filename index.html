@@ -64,7 +64,8 @@
         // logout
             const accessToken = liff.getAccessToken();
         if (accessToken) {
-          fetch("https://api...", {
+          // fetch("https://api...", {
+          fetch("https://api.line.me/liff/v1/apps", {
             headers: {
               "Content-Type": "application/json",
               Authorization: `Bearer ${accessToken}`
